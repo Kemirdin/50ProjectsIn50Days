@@ -1,0 +1,76 @@
+﻿/* Rewritten code with comments */
+
+/* Import font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+/* Set box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+/* Set font-family, display, align-items, justify-content, height, overflow, and margin of body */
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Set display and width of container */
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+/* Set background-size, background-position, background-repeat, height, border-radius, color, cursor, flex, margin, and position of panel */
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+}
+
+    /* Set font-size, position, bottom, left, margin, and opacity of h3 */
+    .panel h3 {
+        font-size: 24px;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        margin: 0;
+        opacity: 0;
+    }
+
+    /* Set flex of active panel */
+    .panel.active {
+        flex: 5;
+    }
+
+        /* Set opacity and transition of active h3 */
+        .panel.active h3 {
+            opacity: 1;
+            transition: opacity 0.3s ease-in 0.4s;
+        }
+
+/* Set width of container and display of panels for max-width of 480px */
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
+
+
