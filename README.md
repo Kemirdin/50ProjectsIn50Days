@@ -7,5 +7,7 @@
 
 https://kemirdin.github.io/HTML-CSS-Portfolio/Myfirst/index.html
 
+3. Rotating Navigation Animation:  https://kemirdin.github.io/50ProjectsIn50Days/Day3-Rotating-Nav-Animation/index.html
+
 
 
